@@ -25,7 +25,7 @@
 
     <section class="container">
         <div class="row content">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 align-self-center">
                 <img src="img/pict1.png" class="img-fluid">
             </div>
             <div class="col-md-6 loginlist">
