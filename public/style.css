@@ -1,0 +1,182 @@
+/* Color*/
+/* Main bg dark green : #255c37 */
+/* Secondary bg dark green : #419151 */
+/* second peach : #f9efd7  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Root */
+* {
+  font-family: Arial, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.greenpeach {
+  background-color: #255c37;
+  color: #f9efd7;
+}
+.peachbg {
+  background-color: #f9efd7;
+}
+.peachgreen {
+  background-color: #f9efd7;
+  color: #255c37;
+}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  color: #255c37;
+  font-weight: 900;
+  font-size: 5vmin;
+}
+h4 {
+  font-weight: 700;
+}
+h6 {
+  color: gray;
+}
+p {
+  font-weight: 600;
+  font-size: 3vmin;
+  color: black;
+  font-weight: 400;
+}
+#mainnavbar {
+  background-color: #255331;
+  z-index: 9999;
+}
+nav form {
+  width: inherit;
+}
+#logo {
+  width: 13vmax;
+}
+#price {
+  color: #419151;
+}
+section {
+  padding-top: 3rem;
+}
+.gold {
+  color: rgb(243, 156, 18);
+}
+.nav-link {
+  font-size: 18px;
+}
+#socialmedia li {
+  font-size: 22px;
+}
+#socialmedia a {
+  text-decoration: none;
+  color: inherit;
+}
+#socialmedia img {
+  width: 45vw;
+}
+#wall {
+  z-index: 999;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+#wall img {
+  width: 100vw;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+.afternav{
+  padding: 15vmin 0 0 0;
+}
+.card-title a{
+  text-decoration: none;
+  color: inherit;
+}
+/* Akhir root */
+
+/* Home Page*/
+#hero {
+  overflow: hidden;
+}
+#hero img {
+  height: 55vmin;
+  width: auto;
+}
+
+#comicpanel img {
+  width: 74vw;
+}
+#comicpanel .content {
+  background-color: #f4f4f4;
+}
+
+/* Search Page  */
+.hidden{
+  display:none
+}
+.pagination a{
+  color: #419151;
+}
+.pagination a:hover{
+  color: #419151;
+}
+.pagination .active a{
+  border-color: #255c37;
+  background-color: #419151;
+  color: #f9efd7;
+}
+
+/* Product detail page  */
+
+
+/* Start Media Query */
+/* Smartphone */
+@media (max-width: 576px) {
+  #wall img {
+    width: inherit;
+  }
+  nav form {
+    width: 65%;
+  }
+  .container {
+    padding: 0 8vw 0 8vw;
+  }
+  #categories .box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #recommendation .products {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  #comicpanel .content {
+    padding: 3vw 3vw 3vw 3vw;
+  }
+  #comicpanel img {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  /* Home  */
+  #categories .box {
+    width: fit-content;
+  }
+  #categories .box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Big */
+@media (min-width: 1399px) {
+  /* .container{
+    margin: 0 10vw 0 10vw;
+  } */
+  /* Home  */
+
+  #comicpanel img {
+    width: inherit;
+  }
+}
