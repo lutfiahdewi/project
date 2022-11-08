@@ -1,5 +1,7 @@
     <?= $this->extend('mydanus/template'); ?>
+    <?php
 
+    ?>
     <?= $this->section('maincontent'); ?>
     <!--Hero-->
     <section id="hero" class="peachbg afternav">
@@ -25,21 +27,31 @@
                 <h1>Kategori Produk</h1>
             </div>
             <div class="row d-flex justify-content-around">
-                <div class="box col-md-2 p-0 mb-3 ">
-                    <a href="categories"><img class="border border-secondary " src="img/cat1.jpg" alt=""></a>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat1.jpg" alt=""></a>
                 </div>
-                <div class="box col-md-2 p-0 mb-3">
-                    <a href="#"><img class="border border-secondary " src="img/cat1.jpg" alt=""></a>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat2.jpg" alt=""></a>
                 </div>
-                <div class="box col-md-2 p-0 mb-3">
-                    <a href="#"><img class="border border-secondary " src="img/cat1.jpg" alt=""></a>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat3.jpg" alt=""></a>
                 </div>
-                <div class="box col-md-2 p-0 mb-3">
-                    <a href="#"><img class="border border-secondary " src="img/cat1.jpg" alt=""></a>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat4.jpg" alt=""></a>
                 </div>
-
-
             </div>
+            <div class="row d-flex justify-content-center">
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat1.jpg" alt=""></a>
+                </div>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat2.jpg" alt=""></a>
+                </div>
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat3.jpg" alt=""></a>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Akhir Categories  -->
@@ -49,9 +61,6 @@
         <img src="img/tembok berwarna.png" alt="">
     </section>
     <!-- Akhir wall -->
-
-
-
 
     <!-- Recomendation -->
     <section id="recommendation" class="peachgreen">
@@ -63,7 +72,7 @@
             </div>
             <div class="row products">
                 <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3" >
+                    <div class="card p-3">
                         <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
@@ -79,7 +88,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3" >
+                    <div class="card p-3">
                         <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
@@ -95,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3" >
+                    <div class="card p-3">
                         <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
@@ -111,7 +120,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3" >
+                    <div class="card p-3">
                         <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
@@ -122,79 +131,80 @@
                             </p>
                             <h6>UKM wirus</h6>
                             <h5 class="card-title"><a href="product" class="stretched-link"> Kue enak</a></h5>
-                            <h4 id="price" class="pt-3">RP. 5.000</h4>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row products">
-                <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
-                        <div class="card-body">
-                            <p><i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-half gold"></i>
-                            </p>
-                            <h6>UKM wirus</h6>
-                            <h5 class="card-title">Kue enak</h5>
-                            <h4 id="price" class="pt-3">RP. 5.000</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
-                        <div class="card-body">
-                            <p><i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-half gold"></i>
-                            </p>
-                            <h6>UKM wirus</h6>
-                            <h5 class="card-title">Kue enak</h5>
-                            <h4 id="price" class="pt-3">RP. 5.000</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
-                        <div class="card-body">
-                            <p><i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-half gold"></i>
-                            </p>
-                            <h6>UKM wirus</h6>
-                            <h5 class="card-title">Kue enak</h5>
-                            <h4 id="price" class="pt-3">RP. 5.000</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card border border-warning shadow p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
-                        <div class="card-body">
-                            <p><i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-fill gold"></i>
-                                <i class="bi bi-star-half gold"></i>
-                            </p>
-                            <h6>UKM wirus</h6>
-                            <h5 class="card-title">Kue enak</h5>
                             <h4 id="price" class="pt-3">RP. 5.000</h4>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <div class="row products">
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <div class="card-body">
+                            <p><i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-half gold"></i>
+                            </p>
+                            <h6>UKM wirus</h6>
+                            <h5 class="card-title"><a href="product" class="stretched-link"> Kue enak</a></h5>
+                            <h4 id="price" class="pt-3">RP. 5.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <div class="card-body">
+                            <p><i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-half gold"></i>
+                            </p>
+                            <h6>UKM wirus</h6>
+                            <h5 class="card-title"><a href="product" class="stretched-link"> Kue enak</a></h5>
+                            <h4 id="price" class="pt-3">RP. 5.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <div class="card-body">
+                            <p><i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-half gold"></i>
+                            </p>
+                            <h6>UKM wirus</h6>
+                            <h5 class="card-title"><a href="product" class="stretched-link"> Kue enak</a></h5>
+                            <h4 id="price" class="pt-3">RP. 5.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <div class="card-body">
+                            <p><i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-fill gold"></i>
+                                <i class="bi bi-star-half gold"></i>
+                            </p>
+                            <h6>UKM wirus</h6>
+                            <h5 class="card-title"><a href="product" class="stretched-link"> Kue enak</a></h5>
+                            <h4 id="price" class="pt-3">RP. 5.000</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
     </section>
     <!-- recommendation  -->

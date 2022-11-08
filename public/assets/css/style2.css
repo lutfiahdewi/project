@@ -369,7 +369,7 @@ td .status {
   }
   .sidebar .sidebar-brand,
   .sidebar li {
-    padding-left: 1rem;
+    padding-left: 0.2rem;
     text-align: center;
   }
 
@@ -426,9 +426,122 @@ td .status {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  /* 
   .recent-grid {
     grid-template-columns: 60% 40%;
+  }
+
+  .sidebar:hover {
+    left: 0 !important;
+    z-index: 100%;
+    width: 345px;
+  }
+
+  .sidebar:hover {
+    width: 345px;
+    z-index: 200;
+  }
+
+  .sidebar:hover .sidebar-brand:hover,
+  .sidebar:hover li {
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .sidebar:hover li a {
+    padding-left: 1rem;
+  }
+
+  .sidebar:hover .sidebar-brand h2 span:last-child,
+  .sidebar:hover li a span:last-child {
+    display: inline;
+  } */
+
+  .sidebar-brand {
+    display: none;
+  }
+
+  .sidebar {
+    width: 70px;
+  }
+
+  /* .editprofil-sidebar {
+    display: block;
+  }
+  .sidebar .sidebar-brand,
+  .sidebar li {
+    padding-left: 0.2rem;
+    text-align: center;
+  }
+
+  .sidebar li a {
+    padding-left: 0rem;
+  }
+
+  .sidebar .sidebar-brand h2 span:last-child,
+  .sidebar li a span:last-child {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 70px;
+  }
+
+  .main-content header {
+    width: calc(100% - 70px);
+    left: 70px;
+  }
+
+  .sidebar:hover {
+    left: 0 !important;
+    z-index: 100%;
+    width: 345px;
+  }
+
+  .sidebar:hover {
+    width: 345px;
+    z-index: 200;
+  }
+
+  .sidebar:hover .sidebar-brand:hover,
+  .sidebar:hover li {
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .sidebar:hover li a {
+    padding-left: 1rem;
+  }
+
+  .sidebar:hover .sidebar-brand h2 span:last-child,
+  .sidebar:hover li a span:last-child {
+    display: inline;
+  } */
+  .editprofil-sidebar {
+    display: block;
+  }
+  .sidebar .sidebar-brand,
+  .sidebar li {
+    padding-left: 0.2rem;
+    text-align: center;
+  }
+
+  .sidebar li a {
+    padding-left: 0rem;
+  }
+
+  .sidebar .sidebar-brand h2 span:last-child,
+  .sidebar li a span:last-child {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 70px;
+  }
+
+  .main-content header {
+    width: calc(100% - 70px);
+    left: 70px;
   }
 
   .sidebar:hover {
@@ -475,9 +588,9 @@ td .status {
     display: none;
   }
 
-  .sidebar {
+  /* .sidebar {
     left: -100% !important;
-  }
+  } */
 
   header h2 {
     display: flex;
@@ -498,9 +611,6 @@ td .status {
     align-items: center;
     justify-content: center !important;
   }
-  .sidebar-brand {
-    display: none;
-  }
 
   header h2 span {
     text-align: center;
@@ -513,7 +623,7 @@ td .status {
 
   .main-content {
     width: 100%;
-    margin-left: 0rem;
+    margin-left: 1.5rem;
   }
 
   header {
@@ -554,65 +664,6 @@ td .status {
   .button:hover {
     cursor: pointer;
   }
-  .button.is-small {
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-  .button.is-primary {
-    background-color: seagreen;
-  }
-  .button.is-primary:hover {
-    background-color: #929787;
-  }
-  .button.is-white {
-    border: 1px solid #fff;
-  }
-  .button.is-white:hover {
-    background: #fff;
-    color: #2d2d2d;
-  }
-  .button.is-plain {
-    border: 1px solid #2d2d2d;
-    color: #2d2d2d;
-    font-weight: lighter;
-  }
-  .button.is-plain:hover {
-    background: #2d2d2d;
-    color: #eee;
-  }
-  .button.is-danger {
-    background: #e4614a;
-  }
-  .button.is-danger:hover {
-    background: #d2553f;
-  }
-  .button.is-dark {
-    background: #000;
-  }
-  .button.is-dark:hover {
-    background: #2d2d2d;
-  }
-  .button.is-blueTw {
-    background: #1da1f2;
-  }
-  .button.is-blueTw:hover {
-    background: #517dad;
-  }
-  .button.has-width-normal {
-    width: auto;
-  }
-  .hero .buttons {
-    margin-top: 15px;
-  }
-  .info_section .info_container {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  /* #nav-toggle:checked + .sidebar:hover {
-        width: 345px;
-        z-index: 200;
-      } */
 
   #nav-toggle:checked + .sidebar .sidebar-brand,
   #nav-toggle:checked + .sidebar li {
@@ -637,6 +688,14 @@ td .status {
 @media only screen and (max-width: 560px) {
   .cards {
     grid-template-columns: 100%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  label {
+    font-size: 12px;
   }
 }
 

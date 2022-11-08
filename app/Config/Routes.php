@@ -37,11 +37,32 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::login');
 $routes->get('/registration', 'Pages::registration');
+
 $routes->get('/home', 'Pages::home');
+$routes->get('/profile', 'Pages::profile');
+$routes->get('/editprofile', 'Pages::editprofile');
+$routes->get('/myorder', 'Pages::myorder');
+$routes->get('/showorder', 'Pages::showorder');
+$routes->get('/complaint', 'Pages::complaint');
+
 $routes->get('/categories', 'Pages::categories');
 $routes->get('/search', 'Pages::search');
 $routes->get('/product', 'Pages::product');
+$routes->get('/checkout', 'Pages::checkout');
+$routes->get('/paymentMethod', 'Pages::paymentMethod');
+$routes->get('/confirmation', 'Pages::confirmation');
+$routes->get('/profileMerchant', 'Pages::profileMerchant');
 
+$routes->get('/dashboardSeller', 'Pages::dashboardSeller');
+$routes->get('/profileSeller', 'Pages::profileSeller');
+$routes->get('/editSeller', 'Pages::editSeller');
+$routes->get('/addProduct', 'Pages::addProduct');
+$routes->get('/manageProduct', 'Pages::manageProduct');
+$routes->get('/editProduct', 'Pages::editProduct');
+$routes->get('/orderSeller', 'Pages::orderSeller');
+$routes->get('/complaintSeller', 'Pages::complaintSeller');
+
+$routes->get('/dashboardAdmin', 'Pages::dashboardAdmin');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

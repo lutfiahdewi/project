@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +35,7 @@
                 <h2 class="signin-text mb-5">Masuk</h2>
                 <form action="#" method="post">
                     <div class="form-group mb-0">
-                        <select class="form-select" aria-label="Default example">
+                        <select class="form-select" aria-label="Default example" required>
                             <option selected disabled>--- Pilih masuk sebagai ---</option>
                             <option value="pembeli">Pembeli</option>
                             <option value="penjual">Penjual</option>
@@ -41,11 +44,11 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Username</label>
-                        <input type="email" name="username" class="form-control">
+                        <input type="text" name="username" class="form-control" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control">
+                        <input type="password" name="password" class="form-control" id="password" required>
                     </div>
                     <div class="form-group form-check">
                         <p for="checkbox" class="form-check-label">Belum ada akun? <span><a href="registration">daftar sekarang</a></span>

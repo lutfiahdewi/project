@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -21,11 +24,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark shadow-lg fixed-top py-md-3 px-md-3" id="mainnavbar">
         <div class="container">
-            <a href="/home"><img class="logo d-none d-sm-block d-sm-none d-md-block" src="img/header logo.png" id="logo" alt="logo mydanus"></a>
+            <a href="/home" class="d-none d-sm-block d-sm-none d-md-block"><img class="logo" src="img/header logo.png" id="logo" alt="logo mydanus"></a>
             <!-- <img class="logo d-block d-sm-none d-none d-sm-block d-md-none" src="img/dana icon.png" id="logo" alt="logo small mydanus"> -->
             <form class="d-flex" role="search">
                 <input class="form-control mx-3 " type="search" placeholder="Cari himada/UKM" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit" href><a href="search"> Search</a></button>
+                <button class="btn btn-outline-light" type="submit" onclick=""><a href="search"> Search</a></button>
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,8 +44,8 @@
                         <a class="nav-link " href="/">Keluar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?php if (isset($profil)) {
-                                                echo $profil;
+                        <a class="nav-link <?php if (isset($profile)) {
+                                                echo $profile;
                                             }; ?>" href="/profile"><i class="fa-solid fa-user fa-lg"></i></a>
                     </li>
                 </ul>
