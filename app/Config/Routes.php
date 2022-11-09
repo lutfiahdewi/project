@@ -41,6 +41,8 @@ $routes->get('/registration', 'Pages::registration');
 $routes->get('/home', 'Pages::home');
 $routes->get('/profile', 'Pages::profile');
 $routes->get('/editprofile', 'Pages::editprofile');
+$routes->get('/editpassword', 'Pages::editpassword');
+$routes->get('/resetpassword', 'Pages::resetpassword');
 $routes->get('/myorder', 'Pages::myorder');
 $routes->get('/showorder', 'Pages::showorder');
 $routes->get('/complaint', 'Pages::complaint');
@@ -63,6 +65,13 @@ $routes->get('/orderSeller', 'Pages::orderSeller');
 $routes->get('/complaintSeller', 'Pages::complaintSeller');
 
 $routes->get('/dashboardAdmin', 'Pages::dashboardAdmin');
+$routes->get('/profileAdmin', 'Pages::profileAdmin');
+$routes->get('/editAdmin', 'Pages::editAdmin');
+$routes->get('/addAccount', 'Pages::addAccount');
+$routes->get('/confirmProduct', 'Pages::confirmProduct');
+$routes->get('/complaintList', 'Pages::complaintList');
+$routes->get('/complaintDetail', 'Pages::complaintDetail');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

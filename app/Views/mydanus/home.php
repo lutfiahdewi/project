@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth2.webp" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth4.webp" class="card-img-top autoratio" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -140,7 +140,7 @@
             <div class="row products">
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth1.webp" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth2.webp" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth3.webp" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-md-3 mb-4">
                     <div class="card p-3">
-                        <img src="img/sampel produk 1.png" class="card-img-top" alt="Gambar Kue enak">
+                        <img src="img/cth4.webp" class="card-img-top" alt="Gambar Kue enak">
                         <div class="card-body">
                             <p><i class="bi bi-star-fill gold"></i>
                                 <i class="bi bi-star-fill gold"></i>
@@ -202,9 +202,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            
+
         </div>
     </section>
     <!-- recommendation  -->

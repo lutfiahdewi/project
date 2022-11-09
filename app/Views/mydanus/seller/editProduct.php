@@ -74,7 +74,7 @@
                         <label for="formFileMultiple" class="form-label">Foto Produk</label>
                     </div>
                     <div class="col-md-9">
-                        <input class="form-control border border-warning" type="file" id="formFileMultiple" multiple>
+                        <input class="form-control border border-warning" type="file" accept="image/*" id="formFileMultiple" multiple>
                     </div>
                 </div>
 

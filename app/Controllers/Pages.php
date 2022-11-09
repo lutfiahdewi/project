@@ -51,6 +51,23 @@ class Pages extends BaseController
         ];
         echo view('mydanus/editprofilpembeli', $data);
     }
+    public function editpassword()
+    {
+        $data = [
+            'title' => "Edit Password | MyDanus",
+            'profile' => "active"
+        ];
+        echo view('mydanus/seller/editpassword', $data);
+    }
+    public function resetpassword()
+    {
+        $data = [
+            'title' => "Reset Password | MyDanus",
+            'profile' => "active"
+        ];
+        echo view('mydanus/seller/resetpassword', $data);
+    }
+
     public function myorder()
     {
         $data = [
@@ -135,23 +152,28 @@ class Pages extends BaseController
     // Seller section 
     public function dashboardSeller()
     {
+
         $data = [
-            'title' => " Dashboard (penjual)  | MyDanus", //menyesuaikan nama ukm/himada
+            'title' => " Dashboard (penjual) | MyDanus", //menyesuaikan nama ukm/himada
             'dashboard' => "active"
         ];
         echo view('mydanus/seller/dashboardSeller', $data);
     }
+
     public function editSeller()
     {
+
         $data = [
-            'title' => " Edit Profile  | MyDanus",
+            'title' => " Edit Profile | MyDanus",
         ];
         echo view('mydanus/seller/editSeller', $data);
     }
+
     public function profileSeller()
     {
+
         $data = [
-            'title' => " Profile (penjual)  | MyDanus", //menyesuaikan nama ukm/himada
+            'title' => " Profile (penjual) | MyDanus", //menyesuaikan nama ukm/himada
             'profile' => "active",
             'profileSeller' => "activeside"
         ];
@@ -160,32 +182,39 @@ class Pages extends BaseController
 
     public function addProduct()
     {
+
         $data = [
-            'title' => " Tambah Produk  | MyDanus",
+            'title' => " Tambah Produk | MyDanus",
             'addProduct' => "activeside"
         ];
         echo view('mydanus/seller/addProduct', $data);
     }
+
     public function manageProduct()
     {
+
         $data = [
-            'title' => " Kelola Produk  | MyDanus",
+            'title' => " Kelola Produk | MyDanus",
             'manageProduct' => "activeside"
         ];
         echo view('mydanus/seller/manageProduct', $data);
     }
+
     public function editProduct()
     {
+
         $data = [
-            'title' => " Edit Produk  | MyDanus",
+            'title' => " Edit Produk | MyDanus",
             'manageProduct' => "activeside"
         ];
         echo view('mydanus/seller/editProduct', $data);
     }
+
     public function orderSeller()
     {
+
         $data = [
-            'title' => " Daftar Pesanan  | MyDanus",
+            'title' => " Daftar Pesanan | MyDanus",
             'orderSeller' => "activeside"
         ];
         echo view('mydanus/seller/orderSeller', $data);
@@ -193,8 +222,9 @@ class Pages extends BaseController
 
     public function complaintSeller()
     {
+
         $data = [
-            'title' => " Ajukan Keluhan  | MyDanus",
+            'title' => " Ajukan Keluhan | MyDanus",
             'complaintSeller' => "activeside"
         ];
         echo view('mydanus/seller/complaintSeller', $data);
@@ -203,10 +233,72 @@ class Pages extends BaseController
     //  Admin section 
     public function dashboardAdmin()
     {
+
         $data = [
-            'title' => " Dashboard Admin  | MyDanus",
+            'title' => " Dashboard Admin | MyDanus",
+            'dashboard' => "active"
 
         ];
         echo view('mydanus/admin/dashboardAdmin', $data);
+    }
+    public function profileAdmin()
+    {
+
+        $data = [
+            'title' => " Profile Admin | MyDanus",
+            'profileAdmin' => "activeside"
+
+        ];
+        echo view('mydanus/admin/profileAdmin', $data);
+    }
+    public function editAdmin()
+    {
+
+        $data = [
+            'title' => " Edit Profile Admin | MyDanus",
+            'editAdmin' => "activeside"
+
+        ];
+        echo view('mydanus/admin/editAdmin', $data);
+    }
+    public function addAccount()
+    {
+
+        $data = [
+            'title' => " Tambah Akun Penjual | MyDanus",
+            'addAccount' => "activeside"
+
+        ];
+        echo view('mydanus/admin/addAccount', $data);
+    }
+    public function confirmProduct()
+    {
+
+        $data = [
+            'title' => " Konfirmasi Produk | MyDanus",
+            'confirmProduct' => "activeside"
+
+        ];
+        echo view('mydanus/admin/confirmProduct', $data);
+    }
+    public function complaintList()
+    {
+
+        $data = [
+            'title' => "Daftar Keluhan | MyDanus",
+            'complaintList' => "activeside"
+
+        ];
+        echo view('mydanus/admin/complaintList', $data);
+    }
+    public function complaintDetail()
+    {
+
+        $data = [
+            'title' => "Detail Keluhan | MyDanus",
+            'complaintList' => "activeside"
+
+        ];
+        echo view('mydanus/admin/complaintDetail', $data);
     }
 }

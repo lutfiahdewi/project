@@ -1,8 +1,9 @@
-<?= $this->extend('mydanus/template'); ?>
+<?= $this->extend('mydanus/seller/template'); ?>
 
 <?= $this->section('maincontent'); ?>
 <!-- content utama -->
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -10,37 +11,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Profil Pembeli</title>
     <link rel=”icon” href=”https://stis.ac.id/media/source/up.png”>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bf9192ff90.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/style2.css" rel="stylesheet" />
     <style>
-        section {
-            margin: 5vw;
-        }
+    section {
+        margin: 5vw;
+    }
 
-        #savebutton {
-            width: auto;
-            margin-top: 3vw;
-        }
+    #savebutton {
+        width: auto;
+        margin-top: 3vw;
+    }
 
-        .content {
-            margin-top: 4%;
-            padding: 2%;
-            background-color: #fff;
-            border: 1px solid black;
-        }
+    .content {
+        margin-top: 4%;
+        padding: 2%;
+        background-color: #fff;
+        border: 1px solid black;
+    }
 
-        input {
-            border: 1px solid #fddd34;
-            border-radius: 5px;
-            padding: 3px;
-            float: right;
+    input {
+        border: 1px solid #fddd34;
+        border-radius: 5px;
+        padding: 3px;
+        float: right;
 
-        }
+    }
     </style>
 </head>
 
@@ -113,7 +116,8 @@
                                     <tr>
                                         <div class="form-group">
                                             <td><label for="namalengkap">Nama Lengkap</label></td>
-                                            <td><input type="text" name="namalengkap" id="nama" readonly="readonly" disabled></td>
+                                            <td><input type="text" name="namalengkap" id="nama" readonly="readonly"
+                                                    disabled></td>
                                         </div>
                                     </tr>
                                     <!-- <tr>
@@ -126,7 +130,8 @@
                                     <tr>
                                         <div class="form-group">
                                             <td><label for="kelas">Kelas</label></td>
-                                            <td><input type="kelas" name="kelas" id="kelas" readonly="readonly" disabled>
+                                            <td><input type="kelas" name="kelas" id="kelas" readonly="readonly"
+                                                    disabled>
                                             </td>
                                         </div>
                                     </tr>
@@ -148,7 +153,8 @@
                                     <tr>
                                         <div class="form-group">
                                             <td><label for="alamat">Alamat</label></td>
-                                            <td><input type="text" name="alamat" id="alamat" readonly="readonly" disabled>
+                                            <td><input type="text" name="alamat" id="alamat" readonly="readonly"
+                                                    disabled>
                                             </td>
                                         </div>
                                     </tr>

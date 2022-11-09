@@ -53,6 +53,8 @@
                     <div class="form-group form-check">
                         <p for="checkbox" class="form-check-label">Belum ada akun? <span><a href="registration">daftar sekarang</a></span>
                         </p>
+                        <p for="checkbox" class="form-check-label">Lupa password? <span><a href="resetpassword">reset password</a></span>
+                        </p>
                     </div>
                     <button class="btn btn-class" id="loginbutton"><a href="home">Login</a></button>
                 </form>

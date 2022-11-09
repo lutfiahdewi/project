@@ -57,15 +57,23 @@
     <!--Sidebar-->
     <div id="sidebar" class="afternav px-4">
         <h3>Unit IT SEMA</h3>
-        <small><a href="editSeller"><i class="bi bi-pencil-square me-3"></i>edit profil</a> </small>
+        <small class="p-2 <?php if (isset($editAdmin)) {
+                                echo $editAdmin;
+                            }; ?>"><a href="editAdmin"><i class="bi bi-pencil-square me-3"></i>edit profil</a> </small>
 
-        <ul class="list-unstyled py-3">
-            <li class="my-2 <?php if (isset($profileAdmin)) {
+        <ul class="list-unstyled py-4">
+            <li class="p-2 <?php if (isset($profileAdmin)) {
                                 echo $profileAdmin;
-                            }; ?>"><a href=""><i class="bi bi-person-circle me-3"></i>Profil</a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-person-plus-fill me-3"></i>Tambah Akun</a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-box-seam-fill me-3"></i>Konfirmasi Produk</a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-exclamation-octagon-fill me-3"></i>Ajukan Keluhan</a> </li>
+                            }; ?>"><a href="/profileAdmin"><i class="bi bi-person-circle me-3"></i>Profil</a> </li>
+            <li class="p-2 <?php if (isset($addAccount)) {
+                                echo $addAccount;
+                            }; ?>"><a href="/addAccount"><i class="bi bi-person-plus-fill me-3"></i>Tambah Akun</a> </li>
+            <li class="p-2 <?php if (isset($confirmProduct)) {
+                                echo $confirmProduct;
+                            }; ?>"><a href="/confirmProduct"><i class="bi bi-box-seam-fill me-3"></i>Konfirmasi Produk</a> </li>
+            <li class="p-2 <?php if (isset($complaintList)) {
+                                echo $complaintList;
+                            }; ?>"><a href="/complaintList"><i class="bi bi-exclamation-octagon-fill me-3"></i>Keluhan</a> </li>
         </ul>
         <div class="d-flex justify-content-center mb-5">
             <button type="button" class="btn btn-outline-light btn-lg " onclick="sidebarSmall()"><i class="bi bi-chevron-double-left"></i></button>
@@ -75,13 +83,13 @@
 
     <!--Sidebar small-->
     <div id="sidebar-sm" class="afternav px-4">
-        <a href="editSeller"><i class="bi bi-pencil-square me-3"></i></a>
+        <a href="editAdmin"><i class="bi bi-pencil-square me-3"></i></a>
 
         <ul class="list-unstyled py-3">
-            <li class="my-2"><a href=""><i class="bi bi-person-circle me-3"></i></a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-person-plus-fill me-3"></i></a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-box-seam-fill me-3"></i></a> </li>
-            <li class="my-2"><a href=""><i class="bi bi-exclamation-octagon-fill me-3"></i></a></li>
+            <li class="my-2"><a href="profileAdmin"><i class="bi bi-person-circle me-3"></i></a> </li>
+            <li class="my-2"><a href="addAccount"><i class="bi bi-person-plus-fill me-3"></i></a> </li>
+            <li class="my-2"><a href="confirmProduct"><i class="bi bi-box-seam-fill me-3"></i></a> </li>
+            <li class="my-2"><a href="complaintList"><i class="bi bi-exclamation-octagon-fill me-3"></i></a></li>
         </ul>
         <div class="row mb-5">
             <button type="button" class="btn btn-outline-light btn-sm" onclick="sidebarNormal()"><i class="bi bi-chevron-double-right"></i></button>
