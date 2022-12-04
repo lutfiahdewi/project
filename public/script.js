@@ -86,17 +86,82 @@ function sidebarSmall() {
 }
 
 // panjang halaman penjual
+var bodyHeight = document.body.scrollHeight;
+//var wallHeight = document.querySelector("#wall").scrollHeight;
+//var footerHeight = document.querySelector("footer").scrollHeight;
+var navbarHeight = document.querySelector("#mainnavbar").scrollHeight;
 lengthen = function () {
   for (let i = 0; i < document.querySelectorAll(".containerSeller").length; i++) {
     if (i != document.querySelectorAll(".containerSeller").length - 1) {
       continue;
     } else {
-      document.querySelectorAll(".containerSeller")[i].style.height = (window.innerHeight - 40 - 53 - 35).toString().concat("px");
+      document.querySelectorAll(".containerSeller")[i].style.height = (window.innerHeight-navbarHeight).toString().concat("px");
     }
   }
 };
-if (window.innerHeight - 40 > document.body.scrollHeight) {
+if (window.innerHeight - 40 > bodyHeight) {
   lengthen();
 }
+ 
+// panjang halaman penjual ketika klik button accordion
+fitLength = function (node) {
+  var wrapperHeight = document.querySelector('#complaint').scrollHeight;
+  var currentHeight = document.querySelector(".containerSeller").scrollHeight; // - 40 - 53 - 35
+  var itemHeight = document.querySelectorAll(".accordion-item")[node - 1].scrollHeight;
+  var hiddenHeight = document.querySelectorAll(".accordion-body")[node - 1].scrollHeight;
+  var accordionHeight = document.querySelector(".accordion").scrollHeight;
+  var bodyHeight = document.body.scrollHeight;
+  /*if (window.innerHeight - 40 < document.body.scrollHeight) {
+    document.querySelector(".containerSeller").style.height = document.querySelector(".containerSeller").scrollHeight.toString().concat("px");
+  }*/
+  console.log('item:' ,itemHeight);
+  console.log('hidden:' ,hiddenHeight);
+  console.log('acc: ',accordionHeight);
+  console.log('cont: ',currentHeight);
+  console.log('body: ',bodyHeight);
 
+
+  if(itemHeight > 125){ //sblmnya > 125 => closing
+    console.log('closing');
+    if(bodyHeight - hiddenHeight > window.innerHeight - 40 ){
+      document.querySelector(".containerSeller").style.height = (currentHeight - hiddenHeight).toString().concat("px");
+      console.log('CS dpt dikurangi');
+    }else{
+      console.log('CS fit window, do nothing');
+    }
+  }else{ //opening
+    console.log('expand');
+    if(currentHeight < (accordionHeight + hiddenHeight)){
+      document.querySelector('.containerSeller').style.height = (currentHeight + hiddenHeight).toString().concat("px");
+      console.log('CS gk cukup, tambah pjg');
+    }else{
+      console.log('CS cukup, do nothing');
+    }
+  }
+  /*if (currentHeight - 500 < accordionHeight) {
+    document.querySelector(".containerSeller").style.height = (document.querySelector(".containerSeller").scrollHeight + 500).toString().concat("px");
+  }*/
+
+  /*if (itemHeight < 125) {
+    // item expanded
+    if (accordionHeight + 500 > currentHeight) {
+      document.querySelector(".containerSeller").style.height = (document.querySelector(".containerSeller").scrollHeight + 500).toString().concat("px");
+    }
+  } else {
+    if(currentHeight - 500 > bodyHeight){
+      document.querySelector(".containerSeller").style.height = (document.querySelector(".containerSeller").scrollHeight - 500).toString().concat("px");
+    }
+  }*/
+  console.log('----------------------');
+};
 console.log("JS run till end!");
+
+function previewImg() {
+  const sampul = document.querySelector("#foto");
+  const imgPreview = document.querySelector(".img-thumbnail");
+  const fileSampul = new FileReader();
+  fileSampul.readAsDataURL(sampul.files[0]);
+  fileSampul.onload = function (e) {
+    imgPreview.src = e.target.result;
+  };
+}

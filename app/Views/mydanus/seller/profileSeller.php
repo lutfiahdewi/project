@@ -20,6 +20,7 @@
                     <li><i class="bi bi-cart me-3"></i>Produk terjual :</li>
                     <li><i class="bi bi-star me-3"></i>Penilaian :</li>
                     <li><i class="bi bi-shop me-3"></i>Bergabung :</li>
+                    <li><i class="bi bi-whatsapp me-3"></i>Kontak : <a href="https://wa.me/628123456890" target="blank">0812-3456-7890</a></li>
                 </ul>
             </div>
         </div>

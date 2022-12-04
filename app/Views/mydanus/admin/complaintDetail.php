@@ -4,7 +4,7 @@
 <!--Nama Complaint-->
 <section id="namacomplaint" class="border-bottom border-dark">
     <div class="container containerSeller py-1">
-        <h4 id=""><a href="checkout"><i class="bi bi-arrow-left me-3"></a></i>UKM Kewirausahaan</h4>
+        <h4 id=""><a href="complaintList"><i class="bi bi-arrow-left me-3"></a></i>UKM Kewirausahaan</h4>
     </div>
 </section>
 

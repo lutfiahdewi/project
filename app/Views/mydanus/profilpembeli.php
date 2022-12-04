@@ -1,4 +1,4 @@
-<?= $this->extend('mydanus/seller/template'); ?>
+<?= $this->extend('mydanus/template'); ?>
 
 <?= $this->section('maincontent'); ?>
 <!-- content utama -->

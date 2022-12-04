@@ -26,29 +26,35 @@
             <div class="row d-flex text-center mb-3">
                 <h1>Kategori Produk</h1>
             </div>
-            <div class="row d-flex justify-content-around">
+            <div class="row d-flex justify-content-center">
                 <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat1.jpg" alt=""></a>
+                    <a href="categories"><img src="img/cat1.jpg" alt="">
+                        <div class="centered">Makanan</div>
+                    </a>
+                </div>
+
+                <div class="box col-md-3 p-2 mb-3 ">
+                    <a href="categories"><img src="img/cat3.jpg" alt="">
+                        <div class="centered">Minuman</div>
+                    </a>
                 </div>
                 <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat2.jpg" alt=""></a>
-                </div>
-                <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat3.jpg" alt=""></a>
-                </div>
-                <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat4.jpg" alt=""></a>
+                    <a href="categories"><img src="img/cat4.jpg" alt="">
+                        <div class="centered">Alat tulis</div>
+                    </a>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat1.jpg" alt=""></a>
+                    <a href="categories"><img src="img/cat1.jpg" alt="">
+                        <div class="centered">Makanan</div>
+                    </a>
                 </div>
+
                 <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat2.jpg" alt=""></a>
-                </div>
-                <div class="box col-md-3 p-2 mb-3 ">
-                    <a href="categories"><img src="img/cat3.jpg" alt=""></a>
+                    <a href="categories"><img src="img/cat3.jpg" alt="">
+                        <div class="centered">....</div>
+                    </a>
                 </div>
             </div>
 

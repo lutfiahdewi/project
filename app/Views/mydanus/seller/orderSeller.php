@@ -8,7 +8,7 @@
             <h2>Daftar Pesanan</h2>
             <div class="accordion py-4">
                 <div class="accordion-item boxform rounded border border-secondary my-3">
-                    <button class="accordion-button  rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <button class="accordion-button rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                         Donat Hati untuk Menyemangati Kesayanganmu
                     </button>
                     <div id="collapse1" class="accordion-collapse collapse show">

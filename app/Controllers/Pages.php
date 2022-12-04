@@ -141,12 +141,12 @@ class Pages extends BaseController
     }
 
 
-    public function profileMerchant()
+    public function profilMerchant()
     {
         $data = [
             'title' => "(toko)  | MyDanus", //menyesuaikan nama ukm/himada
         ];
-        echo view('mydanus/profileMerchant', $data);
+        echo view('mydanus/profilMerchant', $data);
     }
 
     // Seller section 
@@ -158,6 +158,15 @@ class Pages extends BaseController
             'dashboard' => "active"
         ];
         echo view('mydanus/seller/dashboardSeller', $data);
+    }
+    public function productSeller()
+    {
+
+        $data = [
+            'title' => " Dashboard (penjual) | MyDanus", //menyesuaikan nama ukm/himada
+            'dashboard' => "active"
+        ];
+        echo view('mydanus/seller/productdetailSeller', $data);
     }
 
     public function editSeller()
@@ -300,5 +309,22 @@ class Pages extends BaseController
 
         ];
         echo view('mydanus/admin/complaintDetail', $data);
+    }
+    public function sellerList()
+    {
+        $data = [
+            'title' => "Daftar Penjual | MyDanus",
+            'sellerList' => "activeside"
+
+        ];
+        echo view('mydanus/admin/sellerList', $data);
+    }public function buyerList()
+    {
+        $data = [
+            'title' => "Daftar Pembeli | MyDanus",
+            'buyerList' => "activeside"
+
+        ];
+        echo view('mydanus/admin/buyerList', $data);
     }
 }

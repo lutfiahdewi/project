@@ -53,9 +53,10 @@ $routes->get('/product', 'Pages::product');
 $routes->get('/checkout', 'Pages::checkout');
 $routes->get('/paymentMethod', 'Pages::paymentMethod');
 $routes->get('/confirmation', 'Pages::confirmation');
-$routes->get('/profileMerchant', 'Pages::profileMerchant');
+$routes->get('/profilMerchant', 'Pages::profilMerchant');
 
 $routes->get('/dashboardSeller', 'Pages::dashboardSeller');
+$routes->get('/productSeller', 'Pages::productSeller');
 $routes->get('/profileSeller', 'Pages::profileSeller');
 $routes->get('/editSeller', 'Pages::editSeller');
 $routes->get('/addProduct', 'Pages::addProduct');
@@ -71,6 +72,8 @@ $routes->get('/addAccount', 'Pages::addAccount');
 $routes->get('/confirmProduct', 'Pages::confirmProduct');
 $routes->get('/complaintList', 'Pages::complaintList');
 $routes->get('/complaintDetail', 'Pages::complaintDetail');
+$routes->get('/sellerList', 'Pages::sellerList');
+$routes->get('/buyerList', 'Pages::buyerList');
 
 /*
  * --------------------------------------------------------------------
